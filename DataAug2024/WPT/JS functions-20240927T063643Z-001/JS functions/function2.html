@@ -1,0 +1,27 @@
+<!-- example on JS functions -->
+<!DOCTYPE html>
+<html lang="en">    
+ <head>
+    <title>Functions</title>
+	<script src="exprfuns.js"></script>
+ </head>
+ <body>
+	<h3>demo on functional expr</h3>
+	<script>
+		document.write(`${add}<br>`);
+		//calling fun
+		let res = add(10,20);
+		document.write(`${res}<br>`);
+		document.write(`${power(2,8)}<br>`);
+
+		const eles=[200,9,100,40,60];
+		
+		//since JS6
+		eles.forEach( 
+									function(e) { 
+										document.write(`${e}<br>`); 
+									} 
+								); //call back fun
+	</script>
+ </body>
+</html>

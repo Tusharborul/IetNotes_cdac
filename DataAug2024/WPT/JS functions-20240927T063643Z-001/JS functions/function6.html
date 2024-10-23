@@ -1,0 +1,33 @@
+<!-- example on  default params 
+function add(x=0,y,z=0)		<==  invalid 
+function add(x,y=0,z)			<== invalid 
+function add(x=0,y=0,z)		<==  invalid 
+function add(x=0,y,z)		<== invalid 
+function add(x=0,y=0,z=0)		<== valid
+function add(x,y=0,z=0)		<== valid
+function add(x,y,z=0)		<== valid
+     
+Note:		
+	parameter with default value  should be Right to Left order
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Function</title>
+   <script> 
+		//finding sum of 3values
+		const add=function(x,y,z=0) {
+			return x+y+z;
+		}					
+	</script>
+ </head>
+ <body>
+   <h2> Demo on parameter with default value (since JS6) </h2>
+	<script>
+       document.write("Total Val : " + add(2,5,8) + "<br>");  //call1	
+       document.write("Total Val : " + add(4,9) + "<br>");  //call2			
+       document.write("Total Val : " + add() + "<br>");  //call3
+       document.write("Total Val : " + add(11) + "<br>");  //call4
+   </script>
+ </body>
+</html>
