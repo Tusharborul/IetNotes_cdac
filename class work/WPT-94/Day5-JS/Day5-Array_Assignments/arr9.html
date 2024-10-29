@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h3> push & pop methods</h3>
+    <script>
+        const eles = [];
+        eles.push(10);
+        eles.push(20);
+        eles.push(30);
+        let c = eles.push(40);
+        document.write(`eles	${eles}<br>`);
+        document.write(`${c}<br>`);
+        let x = eles.pop();
+        document.write(`1st pop ${x}<br>`);
+        document.write(`2nd pop ${eles.pop()}<br>`);
+        document.write(`eles	${eles}<br>`);
+        eles.push(11, 22, 33);
+        document.write(`eles	${eles}<br>`);
+    </script>
+</body>
+
+</html>

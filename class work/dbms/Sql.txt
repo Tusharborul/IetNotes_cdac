@@ -1,0 +1,77 @@
+Microsoft Windows [Version 10.0.19045.4894]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\MySQL\MySQL Workbench 8.0 CE>mysql --host 192.168.10.150 --port 3306 --user=dac93 --password
+Enter password: *******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 51
+Server version: 8.1.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| dac93              |
+| information_schema |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+
+mysql> use dac93;
+Database changed
+mysql> create database 93_94;
+ERROR 1044 (42000): Access denied for user 'dac93'@'%' to database '93_94'
+mysql> create database dac93_94;
+ERROR 1044 (42000): Access denied for user 'dac93'@'%' to database 'dac93_94'
+mysql> use dac93;
+Database changed
+mysql> create table COURSE (id int primary key, name varchar(45), dureation varchar(45),summery varchar(1024));
+Query OK, 0 rows affected (2.00 sec)
+
+mysql> decs COURSE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'decs COURSE' at line 1
+mysql> desc COURSE;
++-----------+---------------+------+-----+---------+-------+
+| Field     | Type          | Null | Key | Default | Extra |
++-----------+---------------+------+-----+---------+-------+
+| id        | int           | NO   | PRI | NULL    |       |
+| name      | varchar(45)   | YES  |     | NULL    |       |
+| dureation | varchar(45)   | YES  |     | NULL    |       |
+| summery   | varchar(1024) | YES  |     | NULL    |       |
++-----------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from COURSE;
+Empty set (0.00 sec)
+
+mysql> show tables
+    -> ;
++-----------------+
+| Tables_in_dac93 |
++-----------------+
+| course          |
++-----------------+
+1 row in set (0.00 sec)
+
+mysql> insert into course values(1,"Tushar",null,"2022 passout"),(2,"vaishnavi","1 year",null);
+Query OK, 2 rows affected (0.05 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * from course;
++----+-----------+-----------+--------------+
+| id | name      | dureation | summery      |
++----+-----------+-----------+--------------+
+|  1 | Tushar    | NULL      | 2022 passout |
+|  2 | vaishnavi | 1 year    | NULL         |
++----+-----------+-----------+--------------+
+2 rows in set (0.00 sec)
+

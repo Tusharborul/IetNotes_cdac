@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h3>Array methods</h3>
+    <script>
+        const eles = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        document.write(`Eles	=>	${eles}<br>`);
+
+        document.write('-------------------------------<br>');
+
+
+        //deletion		splice(st-ind, count)	
+        eles.splice(5, 1);
+        document.write(`aft del eles	=>	${eles}<br>`);
+
+        document.write('-------------------------------<br>');
+
+
+        let temp = eles.splice(0, 3)
+        document.write(`aft del eles	=>	${eles}<br>`);
+        document.write(`temp	=>	${temp}<br>`);
+
+        document.write('-------------------------------<br>');
+
+        //updation		splice(st-ind, count, new eles)
+        eles.splice(2, 2, 11, 22);
+        document.write(`aft upd eles	=>	${eles}<br>`);
+
+
+    </script>
+</body>
+
+</html>

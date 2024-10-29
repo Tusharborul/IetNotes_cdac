@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .error-text {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.google.com" onsubmit="return true">
+        <input type="text" placeholder="enter name" id="name">
+        <span id="name-error" class="error-text">name is required</span>
+        <br><br>
+        <input type="password" placeholder="enter password" id="password">
+        <span id="password-error" class="error-text">password is required</span>
+        <br><br>
+        <input type="submit" value="login">
+    </form>
+</body>
+
+</html>

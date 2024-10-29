@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let isBold = false;
+
+        function toggleBold() {
+            const paragraph = document.getElementById('h');
+            if (!isBold) {
+                paragraph.style.fontWeight = 'bold';
+            } else {
+                paragraph.style.fontWeight = 'normal';
+            }
+            isBold = !isBold; // Toggle the state
+        }
+        let isItalic = false;
+        function toggleItalic() {
+            const para = document.getElementById('h');
+            if (!isItalic) {
+                para.style.fontStyle = 'italic'; // Use fontStyle for italics
+            } else {
+                para.style.fontStyle = 'normal'; // Reset to normal
+            }
+            isItalic = !isItalic;
+        }
+        let isUnderline = false;
+        function toggleUnderline() {
+            const para = document.getElementById('h');
+            if (!isUnderline) {
+                para.style.textDecoration = 'underline'; // Apply underline
+            } else {
+                para.style.textDecoration = 'none'; // Reset to none
+            }
+            isUnderline = !isUnderline;
+        }
+        let isStrike = false;
+        function toggleStrike() {
+            const para = document.getElementById('h');
+            if (!isStrike) {
+                para.style.textDecoration = 'line-through'
+            } else {
+                para.style.textDecoration = 'none';
+            }
+            isStrike = !isStrike;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="h">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis numquam dolorum officiis nostrum nesciunt
+        repellat accusamus harum voluptate debitis molestiae cumque perspiciatis blanditiis quae, amet quam cum autem.
+        Aliquam, tenetur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, esse iusto consequuntur dicta
+        exercitationem tenetur nulla quas accusantium architecto magni deserunt totam, itaque adipisci quisquam odit
+        maiores! Maxime, atque deserunt.
+    </p>
+    <button onclick="document.getElementById(`h`).style.textAlign='Left'">Left</button>
+    <button onclick="document.getElementById('h').style.textAlign='Right'">Right</button>
+    <button onclick="document.getElementById(`h`).style.textAlign='Justify'">Justify</button>
+    <button onclick="toggleBold()"><b>B</b></button>
+    <button onclick="toggleItalic()"><em>I</em></button>
+    <button onclick="toggleUnderline() "><u>U</u></button>
+    <button onclick="toggleStrike() "><s>S</s></button>
+
+
+</body>
+
+</html>

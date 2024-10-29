@@ -1,0 +1,31 @@
+<!-- finding sum of two numbers -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Js18</title>
+	<meta charset="UTF-8"> 
+  </head>
+  <body>
+    <label>First number</label> <br>
+	<input type="text" id="firstNum"> <br>
+	<label>Second number</label> <br>
+	<input type="text" id="secNum"> <bR>
+	<button onclick="addition()"> addition </button>
+	<br>
+	<output id="op"></output>
+	
+	<script>
+	  function addition()
+	  {
+	    let x, y, res;  //local variables
+	    x=+firstNum.value;	//data coll
+		y=+secNum.value;
+		res=x+y;
+		//document.write("Sum is "+res);	Or
+		//alert("Sum is "+res);		Or
+		//console.log("Sum is "+res);	Or
+		op.value="Sum is "+res;		
+	  }	
+	</script>  
+  </body>
+</html>

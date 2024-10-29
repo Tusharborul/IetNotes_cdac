@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Functions</title>
+    <script src="arrowfuns.js"></script>
+</head>
+
+<body>
+    <h3> arrow functions</h3>
+    <script>
+        document.write(`${myfun}<br>`);
+        myfun();		//calling fun
+        let res = add(10, 20);
+        document.write(`${res}<br>`);
+        document.write(`${power(2, 6)}<br>`);
+        document.write(`${natsum(10)}<br>`);
+
+        const eles = [200, 9, 100, 40, 60];
+        document.write(`Array	=> ${eles}<br>`);
+
+        eles.forEach(e => document.write(`${e}<br>`)
+
+        ); //call back fun
+
+        document.write(`total= ${tot} <br>`);
+    </script>
+</body>
+
+</html>

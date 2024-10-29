@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script src="exprfuns.js"></script>
+</head>
+
+<body>
+    <h1>Function</h1>
+    <script>
+        document.write(`${add}<br>`);
+
+        document.write('--------------------------------<br>');
+
+
+        //calling fun
+        let res = add(10, 20);
+        document.write(`${res}<br>`);
+        document.write(`${power(2, 8)}<br>`);
+
+
+        document.write('--------------------------------<br>');
+
+
+        const eles = [200, 9, 100, 40, 60];
+
+        //since JS6
+        eles.forEach(
+            function (e) {
+                document.write(`${e}<br>`);
+            }
+        );
+    </script>
+
+</body>
+
+</html>

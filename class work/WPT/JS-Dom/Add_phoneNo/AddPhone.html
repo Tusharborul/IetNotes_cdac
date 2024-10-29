@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let count = 1;
+        function add() {
+            const a = document.createElement("input");
+            a.placeholder = "Enter phone number";
+            a.type = "number";
+            a.style.display = "block";
+            const d = document.querySelector('div');
+            if (count < 5) {
+                d.append(a);
+                count++;
+            }
+            else{
+                
+            }
+        }
+        function rem() {
+            const d = document.querySelector('div');
+            if (count > 1) {
+                d.removeChild(d.lastChild);
+                count--;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="number" placeholder="Enter phone number" style="display: block;">
+
+    </div>
+    <button id="add" onclick="add()">+</button>
+    <button id="rem" onclick="rem()">-</button>
+</body>
+
+</html>

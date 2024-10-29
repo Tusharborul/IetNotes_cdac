@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">		 	
+  <head>
+    <title>Js32</title>
+	<meta charset="UTF-8">
+  </head>	
+  <body>
+	<h3>printing multiplication table</h3>
+	<input type="text" id="tn"> 
+	<button onclick="printTable()">Print Table</button>
+	<script>
+	  function printTable()
+	  {
+		let n, res;
+		n=tn.value;
+		
+		for(let i=1; i<=20; i++)
+		{
+		  res=n*i;
+		  document.write(n+"*"+i+"="+res+`<br>`);
+		}		
+	  }	
+	</script>	
+  </body>
+</html>

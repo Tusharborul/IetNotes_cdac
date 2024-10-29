@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h3>array destructuring(JS6)</h3>
+    <script>
+        const a = [10, 20, 30];
+        /* let i,j,k;
+          i=a[0];
+          j=a[1];
+          k=a[2];	or	*/
+        let [i, j, k] = a;  //destructuring
+        document.write(`A	${a}<br>`);
+        document.write(`i	${i}<br>j	${j}<br>k	${k}<br>`);
+
+        const eles = ['html', 'css', 'js', 'bs', 'angular', 'react', 'node', 'ajax', 'jquery'];
+
+        let [x, y, z] = eles;	  //destructuring
+        document.write(`Eles => ${eles}<br>`);
+        document.write(`x	${x}<br>y	${y}<br>z	${z}<br>`);
+
+        let [p, , , , q] = eles;	//destructuring with skip
+        document.write(`p	${p}<br>q	${q}<br>`);
+
+        let [e1, , e2, , ...e] = eles;	//destructuring with skip & spread
+        document.write(`e1	${e1}<br>e2	${e2}<br>E	${e}<br>`);
+
+        let v1 = 100, v2 = 200;
+        [v2, v1] = [v1, v2];	//swapping
+        document.write(`v1	${v1}<br>v2${v2}`);	  
+    </script>
+</body>
+
+</html>

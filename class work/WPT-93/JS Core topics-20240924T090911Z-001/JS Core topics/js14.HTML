@@ -1,0 +1,51 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Js14</title>
+  </head>   
+  <body>
+	<h3>demo on Operators </h3>  
+	<script>
+	  let x=17, y=8;
+	  	  
+	  let z="8";
+	  document.write("hi");
+	  document.write( y==z, '<br>');
+	  document.write( y===z, '<br>');	
+	  document.write( y!=z, '<br>');
+	  document.write( y!==z, '<br>');
+
+	  //logical ope	   &&	||	 !
+	  document.write(x>=0 && x<=100, '<br>');
+	  document.write(!(y>0), '<br>');
+	  
+	  //concate ope	   +
+	  document.write("rama"+"rao"+"<br>");
+	  document.write(100+"mangos<br>");
+	  document.write(10+true, "<br>");
+	  
+	  /* assignment ope		=
+		 shorthand	+=   -=   /=    %=   *=    **=	*/
+	  x+=20;	//x=x+20;
+	  y*=10;	//y=y*10;
+	  document.write(x, '<br>', y, '<br>');
+	  
+	  /* increment ope	++		var++ 		++var
+	     decrement ope	--		var--		--var
+								post		 pre		*/
+	  x++;	//post increment
+	  document.write(x, '<br>');
+	  ++x;	//pre increment
+	  document.write(x, '<br>');
+	  //let res=10*x++;		//390	40
+	  let res=10*++x;		//400	40	  
+	  document.write(res, '<br>', x, '<br>');
+	  
+	  /* conditional ope	?:
+			condition ? statement1 : statement2		*/
+	  
+	  document.write(y%2===0 ? "Even number" : "Odd number");	
+	</script>
+   </body>
+</html>

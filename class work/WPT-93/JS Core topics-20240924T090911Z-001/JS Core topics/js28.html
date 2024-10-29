@@ -1,0 +1,21 @@
+<!-- example on control statements -->
+<script>
+  document.write('<h3>demo on for loop</h3>');
+
+  //to print 1 to 20 numbers
+  for(let i=1; i<=20; i++) //block level var
+  {
+	document.writeln(i);
+  }
+  //document.write(i);	error
+  
+  document.write('<br>');
+  
+  //to print 20 to 1 numbers
+  for(let i=20; i>=1; --i) //block level var  
+    document.writeln(i);
+
+  document.write('<br>');
+  for(let i=1, j=1, k=1 ;i<=9; i++, j++, k++)
+	document.write(i+" "+j+" "+k+"<br>");	
+</script>

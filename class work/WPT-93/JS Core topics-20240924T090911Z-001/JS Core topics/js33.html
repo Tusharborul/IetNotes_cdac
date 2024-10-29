@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">		 	
+  <head>
+    <title>Js33</title>
+	<meta charset="UTF-8">
+	<style>
+	  select{ width:120px; }
+	</style>
+  </head>	
+  <body>
+	<label>Date of Birth:</label> <br>
+	<select id="date">
+	  <option>select day</option>
+	  <script>
+		for(let d=1; d<=31; d++)
+		  document.write('<option>'+d+'</option>');		  
+	  </script>
+	</select>
+	
+	<select id="month">
+	  <option>select month</option>	
+	  <script>
+		for(let m=1; m<=12; m++)
+		  document.write('<option>'+m+'</option>');
+	  </script>
+	</select>
+	
+	<select id="year">
+      <option>select year</option>
+	  <script>
+	    for(let y=2024; y>=1900; y--)
+		  document.write('<option>'+y+'</option>');
+	  </script>	  
+	</select>	
+  </body>
+</html>

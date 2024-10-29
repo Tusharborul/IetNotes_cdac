@@ -1,0 +1,31 @@
+<!-- example on control statements -->
+<script>
+  document.write('<h3>demo on switch</h3>');
+
+  let n;
+  n="sam";	//or  n="sam"	or	n=false	or n=20
+  switch(n)
+  {
+	case "sam": document.write('Ok<br>');
+			break;
+	default: document.write('No<br>');  
+  }
+  
+  //writing condition in switch
+  let a=15;
+  switch(a%2===0)
+  {
+    case true: document.write("even<br>");
+				break;
+	case false: document.write("odd<br>");
+   }
+   
+   //using var with in case
+   let x=10, y=20, z=100;
+   switch(z)
+   {
+	case x:	document.write("X");	break;
+	case y: document.write("Y");	break;
+	default: document.write("None");
+   }
+</script>

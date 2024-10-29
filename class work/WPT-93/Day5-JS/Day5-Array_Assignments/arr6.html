@@ -1,0 +1,34 @@
+<!-- example on js arrays -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h3> in Loop (js6)</h3>
+    <script>
+        const a = [10, 20, 30];
+
+        for (let i in a) {
+            document.write(`${i} &nbsp; ${a[i]}<br>`);
+            //   a[i] = a[i] + 2
+        }	 
+    </script>
+    <h3>of loop (js6)</h3>
+    <script>
+        const colors = ['red', 'cyan', 'black', 'blue'];
+
+        for (let v of colors)
+            document.write(`${v}<br>`);
+
+        let str = "mangos";
+        document.write(`${str[0]}<br>`);
+
+        for (let v of str)
+            document.write(`${v},`);	
+    </script>
+</body>
+
+</html>

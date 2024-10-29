@@ -1,0 +1,69 @@
+##create onkeyevent for password
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .error-text {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.google.com" onsubmit="return validate()">
+        <input type="text" placeholder="enter name" id="name" onKeyUp="validateName()">
+        <span id="error" class="error-text"></span>
+        <br><br>
+        <input type="password" placeholder="enter password" id="password" onKeyUp="validatePassword()">
+        <span id="error1" class="error-text"></span>
+        <br><br>
+        <input type="submit" value="login">
+    </form>
+    <script>
+        function validate() {
+            const name = document.getElementById("name").value;
+            const password = document.getElementById("password").value;
+            var isValid = true;
+            if (name.length == 0) {
+                document.getElementById("error").innerHTML = "name is required";
+                isValid = false;
+            }
+            if (password.length == 0) {
+                document.getElementById("error1").innerHTML = "password is required";
+                isValid = false;
+            }
+            return isValid;
+
+        }
+
+
+
+
+        function validateName() {
+            const name = document.getElementById("name").value;
+            if (name.length == 0)
+                document.getElementById("error").innerHTML = "name is required";
+            else
+                document.getElementById("error").innerHTML = "";
+
+
+
+        }
+        function validatePassword() {
+            const password = document.getElementById("password").value;
+            if (password.length == 0)
+                document.getElementById("error1").innerHTML = "password is required";
+            else
+                document.getElementById("error1").innerHTML = "";
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

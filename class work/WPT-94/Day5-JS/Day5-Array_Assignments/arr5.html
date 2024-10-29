@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h3>Nesting arrays</h3>
+    <script>
+        const a = [
+            [10, 20, 30],
+            [true, false],
+            ['cyan', 'red', 'black', 'pink']
+        ];
+        document.write(`a	${a}<br>`);
+
+
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++)
+                document.write(`${a[i][j]}  &nbsp; `);
+            document.write(`<br>`);
+        }
+
+
+        // console.table(a);	
+    </script>
+</body>
+
+</html>

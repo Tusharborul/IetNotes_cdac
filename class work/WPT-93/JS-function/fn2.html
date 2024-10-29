@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Functions</title>
+    <script src="fn2.js"></script>
+</head>
+
+<body>
+    <h3>demo on functional expr</h3>
+    <script>
+        document.write(`${add}<br>`);
+
+        let res = add(10, 20);
+        document.write(`${res}<br>`);
+        document.write(`${power(2, 8)}<br>`);
+
+        const eles = [200, 9, 100, 40, 60];
+
+
+        eles.forEach(
+            function (e) {
+                document.write(`${e}<br>`);
+            }
+        ); 
+    </script>
+</body>
+
+</html>

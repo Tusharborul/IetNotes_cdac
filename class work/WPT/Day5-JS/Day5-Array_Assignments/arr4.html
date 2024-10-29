@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h3> Nesting Arrays</h3>
+    <script>
+        const a = [
+            [40, 20, 80],
+            [91, 23, 93]
+        ];
+        document.write(`a	${a}<br>`);
+        console.log(`${a.length}<br>`);
+        document.write(`${a[0].length}<br>`);
+        document.write(`${a[1].length}<br>`);
+
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++)
+                document.write(`${a[i][j]}  &nbsp; `);
+            document.write(`<br>`);
+        }
+
+
+        console.table(a);	
+    </script>
+</body>
+
+</html>

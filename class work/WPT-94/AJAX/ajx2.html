@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        p {
+
+            background-color: aqua;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="container">
+    </div>
+
+    <input type="button" value="fetch data" onclick="fetchdata()">
+
+    <script>
+        function fetchdata() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+            xhr.send();
+            xhr.onreadystatechange = () => {
+
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    //  console.log(xhr.responseText);//get json object in text format
+                    const data = JSON.parse(xhr.responseText);
+                    console.log(data);
+                    const container1 = document.getElementById("container");
+                    for (i = 0; i < data.length; i++) {
+                        const para = document.createElement("p");
+                        para.innerHTML = data[i].id + "  " + data[i].name;
+                        container.appendChild(para);
+                    }
+                }
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

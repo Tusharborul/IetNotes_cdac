@@ -1,0 +1,13 @@
+<!-- example on control statements -->
+<script>
+  document.write('<h3>demo on continue & break</h3>');
+ 
+  let n=+prompt("enter n value");
+  
+  for(let i=1; i<=n; ++i)
+  {
+    if(i%4===0)	//(i===3 || i===9 || i===15)
+	  continue;		//break
+	document.writeln(i);
+  }
+</script>

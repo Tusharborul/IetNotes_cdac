@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <img src="BulbOff.jpg" alt="">
+
+    <button id="incSize" onclick="On()">on</button>
+    <button id="decSize" onclick="off()">off</button>
+
+    <script>
+        function off() {
+
+            const bulb = document.querySelector('img').src = "BulbOff.jpg";
+
+        }
+        function On() {
+
+            const bulb = document.querySelector('img').src = "BulbOn.jpg";
+
+        }
+
+    </script>
+</body>
+
+</html>
