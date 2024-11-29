@@ -1,0 +1,13 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class LoginDaoImpl implements LoginDao{
+	static Connection conn;
+	static PreparedStatement getAll;
+	static {
+		conn=DBUtil.getMyConnection();
+		getAll=conn.prepareStatement("select * from product");
+	}
+}

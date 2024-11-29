@@ -1,0 +1,11 @@
+package com.demo.service;
+
+public interface DeptService {
+
+	void addnewDepartment();
+
+	boolean removeByid(int did);
+
+	boolean modifyById(int did, String dname, double dloc, Object object);
+
+}

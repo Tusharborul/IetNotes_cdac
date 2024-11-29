@@ -1,0 +1,19 @@
+package com.demo.test;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.demo.beans.Course;
+
+public class TestOneToMany {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SessionFactory sf= new Configuration().configure().buildSessionFactory();
+		
+		Course c1=new Course();
+		c1.setCname("java");
+
+	}
+
+}

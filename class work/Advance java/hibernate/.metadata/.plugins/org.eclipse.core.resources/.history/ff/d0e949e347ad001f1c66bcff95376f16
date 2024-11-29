@@ -1,0 +1,16 @@
+package com.demo.Test;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.mysql.cj.Session;
+
+public class TestOneToOneBi {
+
+	public static void main(String[] args) {
+		
+		SessionFactory sf=new Configuration().configure().buildSessionFactory();
+
+	}
+
+}

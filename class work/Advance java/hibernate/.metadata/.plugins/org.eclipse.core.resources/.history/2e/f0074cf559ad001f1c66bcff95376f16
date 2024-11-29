@@ -1,0 +1,29 @@
+package com.demo.test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.demo.beans.Course;
+import com.demo.beans.Student;
+
+public class TestOneToMany {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SessionFactory sf= new Configuration().configure().buildSessionFactory();
+		
+		
+		
+		Session sess= sf.openSession();
+		Transaction tr = sess.beginTransaction();
+		tr.commit();
+		sess.close();
+		sf.close();
+	}
+
+}

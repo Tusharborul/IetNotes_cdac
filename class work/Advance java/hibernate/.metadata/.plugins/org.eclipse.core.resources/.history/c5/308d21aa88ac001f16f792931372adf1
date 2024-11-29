@@ -1,0 +1,34 @@
+package com.demo.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import com.demo.beans.Student;
+
+public class TestStudentProdAnnotation {
+
+	public static void main(String[] args) {
+		SessionFactory sf=new Configuration().configure().buildSessionFactory();
+		Session session1=sf.openSession();
+		Transaction tr1=session1.beginTransaction();
+		
+		Student s1=new Student("Anil","4444",97);
+		Student s2=new Student("Vandana","5555",97);
+		
+		System.out.println("before get method");
+		Student ss1=session1.get(Student.class,1);
+		System.out.println(ss1);
+		Student ss2=session1.get(Student.class,1);
+		System.out.println("After get method");
+		System.out.println(ss2.getSname());
+		tr1.commit();
+		session1.close();
+		sf.close();
+		
+		
+		
+
+	}
+
+}

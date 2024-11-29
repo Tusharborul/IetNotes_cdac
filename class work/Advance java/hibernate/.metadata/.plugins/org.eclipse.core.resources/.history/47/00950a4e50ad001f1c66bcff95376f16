@@ -1,0 +1,60 @@
+package com.demo.beans;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Coursetab1")
+public class Course {
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	private int cid;
+	private String cname;
+	
+	private Student s;
+
+	public Course() {
+		super();
+	}
+	public Course(String cname, Student s) {
+		super();
+		this.cname = cname;
+		this.s = s;
+	}
+	public Course(int cid, String cname, Student s) {
+		super();
+		this.cid = cid;
+		this.cname = cname;
+		this.s = s;
+	}
+	public int getCid() {
+		return cid;
+	}
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public Student getS() {
+		return s;
+	}
+	public void setS(Student s) {
+		this.s = s;
+	}
+	@Override
+	public String toString() {
+		return "Course [cid=" + cid + ", cname=" + cname + ", s=" + s + "]";
+	}
+	
+	
+}

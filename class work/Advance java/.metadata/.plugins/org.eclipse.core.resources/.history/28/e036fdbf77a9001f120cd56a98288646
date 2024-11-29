@@ -1,0 +1,18 @@
+package com.demo.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class LoginDaoImpl implements LoginDao{
+	static Connection conn;
+	static PreparedStatement getAll;
+	static {
+		try {
+			conn=DBUtil.getMyConnection();
+			getAll=conn.prepareStatement("select * from product");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}
