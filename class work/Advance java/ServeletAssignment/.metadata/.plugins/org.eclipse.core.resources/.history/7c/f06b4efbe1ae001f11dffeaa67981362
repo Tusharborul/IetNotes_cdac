@@ -1,0 +1,13 @@
+package com.demo.service;
+
+import com.demo.beans.User;
+
+public class LoginServiceImpl implements LoginService{
+	LoginDao ldao;
+	@Override
+	public User validateUser(String uname, String passwd) {
+		// TODO Auto-generated method stub
+		return 
+	}
+
+}

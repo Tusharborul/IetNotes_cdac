@@ -1,0 +1,8 @@
+package helloSpring;
+
+public class SpringFirst {
+	
+	public SpringFirst() {
+		System.out.println("");
+	}
+}

@@ -1,0 +1,18 @@
+package com.demo.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class TestCriteriaQuary {
+
+	public static void main(String[] args) {
+		SessionFactory sft= new Configuration().configure().buildSessionFactory();
+		Session sess = sft.openSession();
+		Transaction tr = sess.beginTransaction();
+		
+		
+	}
+
+}

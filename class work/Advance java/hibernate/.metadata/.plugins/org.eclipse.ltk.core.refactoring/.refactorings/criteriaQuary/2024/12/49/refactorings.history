@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;InheritanceSingleTable/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;criteriaQuary&apos;&#x0D;&#x0A;- Destination element: &apos;InheritanceSingleTable/src/main/resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     hibernate.cfg.xml&#x0D;&#x0A;     hibernate-mapping-3.0.dtd&#x0D;&#x0A;     hibernate-configuration-3.0.dtd" description="Copy files" destination="=InheritanceSingleTable/src\/main\/resources=/maven.pomderived=/true=/" element1="src/main/resources/hibernate.cfg.xml" element2="src/main/resources/hibernate-mapping-3.0.dtd" element3="src/main/resources/hibernate-configuration-3.0.dtd" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1733118176579" units="0" version="1.0"/>
+</session>
