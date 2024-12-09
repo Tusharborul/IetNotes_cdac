@@ -1,0 +1,7 @@
+package com.demo.beans;
+
+public class Order {
+	private int Oid;
+	private Product p;
+
+}

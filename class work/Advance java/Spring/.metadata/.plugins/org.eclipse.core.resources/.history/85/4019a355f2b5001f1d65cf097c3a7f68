@@ -1,0 +1,4 @@
+jdbc.driverclass=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://192.168.10.127:3306/dac93?useSSL=false
+jdbc.uname=dac93
+jdbc.pass=welcome

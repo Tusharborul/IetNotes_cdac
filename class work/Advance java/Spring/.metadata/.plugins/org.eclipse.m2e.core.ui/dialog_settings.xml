@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day5\MyMVC_Day15"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day4\MyMVC_Day15"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day3\2AOP\src\main\java\com\demo\aop\MyAspect.java"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day3"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day2\3.1autoWire_byType"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day2\3.2autoWire_Constructor\src\main\java\com\demo\test\TestConstructor.java"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day2\3.1autoWire_byType\src\main\resources\springconfig.xml"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day2\2constructor-org_setValueUsingConst\src\main\resources\springconfig.xml"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day2"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\springDemp\src\main\resources\springconfig.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day5\SpringRestWebService"/>
+			<item value="C:\Users\IET\Desktop\Advance Java\Spring\day6\SpringRestWebService"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

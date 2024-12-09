@@ -1,0 +1,15 @@
+package com.demo.dao;
+
+import com.demo.beans.Product;
+
+public interface ProductDao {
+
+	boolean saveProduct(Product p);
+
+	boolean deleteProduct(int pid);
+
+	boolean updateProduct(Product p);
+
+	Product getElementById(int pid);
+
+}
